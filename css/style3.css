@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'trebuchet ms', 'lucida sans unicode', 'lucida grande', 'lucida sans', arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-desc {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.tampilkan-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.tampilkan-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
